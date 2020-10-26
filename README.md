@@ -43,7 +43,7 @@ We can add additional endpoints to return fixed formats of random bits as requir
 
 ## Future work 
 
-This is an ongoing research project and we have three areas we feel the code can be built upon as TODOs:
+This is an ongoing research project and we have four areas we feel the code can be built upon as TODOs:
  * Add HTTPS certs for TLSv1.2/1.3 secure communications
  * Add auth
  * Proper real world testing
