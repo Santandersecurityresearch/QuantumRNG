@@ -1,3 +1,15 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+##################################################
+# CSR Security Engineering
+##################################################
+# MIT License Copyright (c) 2020 Grupo Santander
+##################################################
+# Author: Dr. Mark Carney @LargeCardinal
+# Version: 1.0
+##################################################
+
 import flask
 from flask import request, jsonify
 import base64
