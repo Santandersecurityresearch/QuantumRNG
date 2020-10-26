@@ -1,0 +1,46 @@
+# QuantumRNG - QRNG as a service prototypes
+
+This repo is a prototype for some ideas of having a 'Quantum RNG as a Service' - a CSPRNG that makes use of a quantum computer to generate its entropy pool for its randomness. 
+
+## Disclaimer
+
+This code is most certainly **NOT** for use in production systems. This is just a proof-of-concept designed to show one way to integrate cloud systems into something that has the promise of being useful. YMMV and caveat developer!
+
+## Setup
+
+You will need to install `qiskit` with `pip` or sim. so that you can access the quantum computer backend. 
+
+You will also need to create an `ibm_secrets.yml` file so that you can load in your API key (look at the 'My Account' page on IBMQX to find this).
+
+The contents of this should look like:
+```
+ibm_api_key: long_hexadecimal_string_goes_here
+```
+
+(Note - you can specify a file when you call the class, so long as it contains the right YAML key.)
+
+Once you have set this up, then you should be good to go by running the qrng flask API with
+```
+python3 qrng_flask_api.py
+```
+
+You can test it with the following `curl` examples. This should return 512 bits, base64 encoded, in a JSON object:
+```
+curl http://127.0.0.1:5000/api/v1/qrng/get_bits
+```
+Whilst this should return a specified number of bits, base64 encoded in a JSON object. 
+```
+curl http://127.0.0.1:5000/api/v1/qrng/get_num_bits/1024
+```
+
+We can add additional endpoints to return fixed formats of random bits as required, but these are the two most basic functions required by most things that want to access good quality randomness.
+
+## Future work 
+
+There are three areas that the code can initially be built upon as TODOs:
+ * add HTTPS certs for TLSv1.2/1.3 secure communications
+ * add auth
+ * do some real world testing
+ * add threading for high-volume applications
+
+Feel free to add, expand, and improvise :P -MC.
