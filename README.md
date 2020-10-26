@@ -1,6 +1,6 @@
 # QuantumRNG - QRNG as a service prototypes
 
-![QPRNG](QPRNG.png)
+![QRNG](QRNG.png)
 
 This repo is a prototype for some ideas of having a 'Quantum RNG as a Service' - a A cryptographically secure pseudorandom number generator (CSPRNG) that makes use of a quantum computer to generate its entropy pool for its randomness. 
 
