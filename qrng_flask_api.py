@@ -6,7 +6,7 @@
 ##################################################
 # MIT License Copyright (c) 2020 Grupo Santander
 ##################################################
-# Author: Dr. Mark Carney @LargeCardinal
+# Author: Dr. Mark Carney (@LargeCardinal)
 # Version: 1.0
 ##################################################
 
