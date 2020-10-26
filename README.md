@@ -53,5 +53,5 @@ We are releasing this to the community in the hope that it fosters creativity an
 
 # Who Is Behind It?
 
-QuantumRNG was developed by the Dr. Mark Carney [@largeCardinal](https://twitter.com/LargeCardinal) of the Santander Cyber Security Research, who are:
+QuantumRNG was developed by the Dr. Mark Carney [@largeCardinal](https://twitter.com/LargeCardinal) of Santander Cyber Security Research 
 
