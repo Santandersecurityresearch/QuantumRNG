@@ -1,5 +1,7 @@
 # QuantumRNG - QRNG as a service prototypes
 
+![QPRNG](QPRNG.png)
+
 This repo is a prototype for some ideas of having a 'Quantum RNG as a Service' - a A cryptographically secure pseudorandom number generator (CSPRNG) that makes use of a quantum computer to generate its entropy pool for its randomness. 
 
 We have chosen to use IBM's [IBM Quantum Experience](https://quantum-computing.ibm.com/) platform due to there being no other cloud Quantum Computing platform with 5 qubits.
