@@ -1,14 +1,18 @@
 # QuantumRNG - QRNG as a service prototypes
 
-This repo is a prototype for some ideas of having a 'Quantum RNG as a Service' - a CSPRNG that makes use of a quantum computer to generate its entropy pool for its randomness. 
+This repo is a prototype for some ideas of having a 'Quantum RNG as a Service' - a A cryptographically secure pseudorandom number generator (CSPRNG) that makes use of a quantum computer to generate its entropy pool for its randomness. 
+
+We have chosen to use IBM's [IBM Quantum Experience](https://quantum-computing.ibm.com/) platform due to there being no other cloud Quantum Computing platform with 5 qubits.
 
 ## Disclaimer
 
-This code is most certainly **NOT** for use in production systems. This is just a proof-of-concept designed to show one way to integrate cloud systems into something that has the promise of being useful. YMMV and caveat developer!
+This code is most certainly **NOT** for use in production systems. This is just a proof-of-concept designed to show one way to integrate cloud systems into something that has the promise of being useful. We advise you to read the code and understand what is being proposed before deploying it. 
 
-## Setup
+## Getting It Working
 
-You will need to install `qiskit` with `pip` or sim. so that you can access the quantum computer backend. 
+If you don't have one already, you will need to register an account on the [IBM Quantum Experience](https://quantum-computing.ibm.com/) website. 
+
+You will need to install `qiskit` with `pip` or sim in order for you to access the quantum computer backend. 
 
 You will also need to create an `ibm_secrets.yml` file so that you can load in your API key (look at the 'My Account' page on IBMQX to find this).
 
@@ -37,10 +41,15 @@ We can add additional endpoints to return fixed formats of random bits as requir
 
 ## Future work 
 
-There are three areas that the code can initially be built upon as TODOs:
- * add HTTPS certs for TLSv1.2/1.3 secure communications
- * add auth
- * do some real world testing
- * add threading for high-volume applications
+This is an ongoing research project and we have three areas we feel the code can be built upon as TODOs:
+ * Add HTTPS certs for TLSv1.2/1.3 secure communications
+ * Add auth
+ * Proper real world testing
+ * Add threading for high-volume applications
 
-Feel free to add, expand, and improvise :P -MC.
+We are releasing this to the community in the hope that it fosters creativity and pull requests. 
+
+# Who Is Behind It?
+
+QuantumRNG was developed by the Dr. Mark Carney [@largeCardinal](https://twitter.com/LargeCardinal) of the Santander Cyber Security Research, who are:
+
